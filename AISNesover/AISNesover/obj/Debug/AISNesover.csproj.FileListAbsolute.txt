@@ -1,0 +1,2 @@
+c:\users\ngadget\documents\visual studio 2013\Projects\AISNesover\AISNesover\bin\Debug\AISNesover.exe.config
+C:\Users\nGadget\Documents\GitHub\Diplom4Marina\AISNesover\AISNesover\bin\Debug\AISNesover.exe.config
