@@ -1,2 +1,26 @@
 c:\users\ngadget\documents\visual studio 2013\Projects\AISNesover\AISNesover\bin\Debug\AISNesover.exe.config
 C:\Users\nGadget\Documents\GitHub\Diplom4Marina\AISNesover\AISNesover\bin\Debug\AISNesover.exe.config
+h:\Programm\Diplom\AISNesover\AISNesover\bin\Debug\AISNesover.exe.config
+h:\Programm\Diplom\AISNesover\AISNesover\bin\Debug\Database1.mdf
+h:\Programm\Diplom\AISNesover\AISNesover\bin\Debug\Database1_log.ldf
+h:\Programm\Diplom\AISNesover\AISNesover\bin\Debug\AISNesover.exe
+h:\Programm\Diplom\AISNesover\AISNesover\bin\Debug\AISNesover.pdb
+h:\Programm\Diplom\AISNesover\AISNesover\obj\Debug\AISNesover.csprojResolveAssemblyReference.cache
+h:\Programm\Diplom\AISNesover\AISNesover\obj\Debug\AISNesover.Form1.resources
+h:\Programm\Diplom\AISNesover\AISNesover\obj\Debug\AISNesover.Properties.Resources.resources
+h:\Programm\Diplom\AISNesover\AISNesover\obj\Debug\AISNesover.csproj.GenerateResource.Cache
+h:\Programm\Diplom\AISNesover\AISNesover\obj\Debug\AISNesover.exe
+h:\Programm\Diplom\AISNesover\AISNesover\obj\Debug\AISNesover.pdb
+H:\Programm\Diplom\AISNesover\AISNesover\obj\Debug\AISNesover.AddNes.resources
+C:\Users\nGadget\Documents\GitHub\dip\AISNesover\AISNesover\bin\Debug\AISNesover.exe.config
+C:\Users\nGadget\Documents\GitHub\dip\AISNesover\AISNesover\obj\Debug\AISNesover.exe
+C:\Users\nGadget\Documents\GitHub\dip\AISNesover\AISNesover\obj\Debug\AISNesover.pdb
+C:\Users\nGadget\Documents\GitHub\dip\AISNesover\AISNesover\bin\Debug\Database1.mdf
+C:\Users\nGadget\Documents\GitHub\dip\AISNesover\AISNesover\bin\Debug\Database1_log.ldf
+C:\Users\nGadget\Documents\GitHub\dip\AISNesover\AISNesover\bin\Debug\AISNesover.exe
+C:\Users\nGadget\Documents\GitHub\dip\AISNesover\AISNesover\bin\Debug\AISNesover.pdb
+C:\Users\nGadget\Documents\GitHub\dip\AISNesover\AISNesover\obj\Debug\AISNesover.csprojResolveAssemblyReference.cache
+C:\Users\nGadget\Documents\GitHub\dip\AISNesover\AISNesover\obj\Debug\AISNesover.AddNes.resources
+C:\Users\nGadget\Documents\GitHub\dip\AISNesover\AISNesover\obj\Debug\AISNesover.Form1.resources
+C:\Users\nGadget\Documents\GitHub\dip\AISNesover\AISNesover\obj\Debug\AISNesover.Properties.Resources.resources
+C:\Users\nGadget\Documents\GitHub\dip\AISNesover\AISNesover\obj\Debug\AISNesover.csproj.GenerateResource.Cache

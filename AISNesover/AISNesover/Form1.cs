@@ -16,5 +16,18 @@ namespace AISNesover
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'dataSet1.worksheet' table. You can move, or remove it, as needed.
+            this.worksheetTableAdapter.Fill(this.dataSet1.worksheet);
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AddNes addNes = new AddNes();
+            addNes.Show();
+        }
     }
 }
