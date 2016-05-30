@@ -32,16 +32,16 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.worksheetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataSet1 = new AISNesover.DataSet1();
-            this.worksheetTableAdapter = new AISNesover.DataSet1TableAdapters.worksheetTableAdapter();
-            this.button1 = new System.Windows.Forms.Button();
             this.idMinorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.surnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.patronymicDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sexDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Birthday = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.worksheetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSet1 = new AISNesover.DataSet1();
+            this.worksheetTableAdapter = new AISNesover.DataSet1TableAdapters.worksheetTableAdapter();
+            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -81,30 +81,6 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(544, 338);
             this.dataGridView1.TabIndex = 1;
-            // 
-            // worksheetBindingSource
-            // 
-            this.worksheetBindingSource.DataMember = "worksheet";
-            this.worksheetBindingSource.DataSource = this.dataSet1;
-            // 
-            // dataSet1
-            // 
-            this.dataSet1.DataSetName = "DataSet1";
-            this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // worksheetTableAdapter
-            // 
-            this.worksheetTableAdapter.ClearBeforeFill = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(12, 371);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Добавить";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // idMinorDataGridViewTextBoxColumn
             // 
@@ -149,9 +125,33 @@
             this.Birthday.Name = "Birthday";
             this.Birthday.ReadOnly = true;
             // 
+            // worksheetBindingSource
+            // 
+            this.worksheetBindingSource.DataMember = "worksheet";
+            this.worksheetBindingSource.DataSource = this.dataSet1;
+            // 
+            // dataSet1
+            // 
+            this.dataSet1.DataSetName = "DataSet1";
+            this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // worksheetTableAdapter
+            // 
+            this.worksheetTableAdapter.ClearBeforeFill = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(12, 371);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Добавить";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(103, 370);
+            this.button2.Location = new System.Drawing.Point(93, 371);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 3;
@@ -186,7 +186,6 @@
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem файлToolStripMenuItem;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private DataSet1 dataSet1;
         private System.Windows.Forms.BindingSource worksheetBindingSource;
         private DataSet1TableAdapters.worksheetTableAdapter worksheetTableAdapter;
@@ -198,6 +197,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn sexDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn Birthday;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
 

@@ -22,6 +22,7 @@ namespace AISNesover
         {
             InitializeComponent();
             comboBox1.SelectedIndex = 0;
+            panel2.Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -56,6 +57,12 @@ namespace AISNesover
             // TODO: данная строка кода позволяет загрузить данные в таблицу "dataSet1.worksheet". При необходимости она может быть перемещена или удалена.
             this.worksheetTableAdapter.Fill(this.dataSet1.worksheet);
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = false;
+            panel2.Visible = true;
         }
     }
 }
