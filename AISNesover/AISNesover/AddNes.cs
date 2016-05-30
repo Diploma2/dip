@@ -7,8 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
-using System.Data;
 using System.Data.SqlClient;
 
 namespace AISNesover
@@ -23,6 +21,9 @@ namespace AISNesover
             InitializeComponent();
             comboBox1.SelectedIndex = 0;
             panel2.Visible = false;
+            panel3.Visible = false;
+            panel8.Visible = false;
+            panel10.Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -63,6 +64,45 @@ namespace AISNesover
         {
             panel1.Visible = false;
             panel2.Visible = true;
+            panel3.Visible = false;
+            panel8.Visible = false;
+            panel10.Visible = false;
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = true;
+            panel2.Visible = false;
+            panel3.Visible = false;
+            panel8.Visible = false;
+            panel10.Visible = false;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = false;
+            panel2.Visible = false;
+            panel3.Visible = true;
+            panel8.Visible = false;
+            panel10.Visible = false;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = false;
+            panel2.Visible = false;
+            panel3.Visible = false;
+            panel8.Visible = true;
+            panel10.Visible = false;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = false;
+            panel2.Visible = false;
+            panel3.Visible = false;
+            panel8.Visible = false;
+            panel10.Visible = true;
         }
     }
 }
