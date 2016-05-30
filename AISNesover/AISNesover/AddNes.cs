@@ -21,20 +21,22 @@ namespace AISNesover
         public AddNes()
         {
             InitializeComponent();
+            comboBox1.SelectedIndex = 0;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
-            AddNew(textBox1.Text, textBox2.Text, textBox3.Text, comboBox1.Text, dateTimePicker1.Value.ToString("yyyy-MM-dd"));
-           /* string connStr = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True";
-            SqlConnection conn = new SqlConnection(connStr); // создаем подключение
-            conn.Open(); // открываем подключение
-            SqlCommand cmd = new SqlCommand("Insert Into worksheet ([Surname], [Name], [Patronymic],[Birthday]) Values ('" + textBox1.Text + "', '" + textBox2.Text + "', '" + textBox3.Text + "', '" + dateTimePicker1.Value.ToString("yyyy-MM-dd") + "')", conn); // создаем SQL запрос
-            cmd.ExecuteNonQuery(); // выполняем запрос на сервер
-            conn.Close(); // закрываем соединение*/
+            if ((this.textBox1.Text.Length == 0) || (this.textBox2.Text.Length == 0)
+                || (this.textBox3.Text.Length == 0) || (this.comboBox1.Text.Length == 0))
+            {
+                MessageBox.Show("Данные введены некорректно!\nПроверьте данные",
+                    "Error");
+            }
+            else
+            {
+                AddNew(textBox1.Text, textBox2.Text, textBox3.Text, comboBox1.Text, dateTimePicker1.Value.ToString("yyyy-MM-dd"));
+            }
         }
-
         public void AddNew(string surname, string name, string patronymic, string sex, string date)
         {
             SqlConnection conn = new SqlConnection(connectionString);
@@ -47,6 +49,13 @@ namespace AISNesover
             MessageBox.Show("Добавление прошло успешно!", "Добавление прошло успешно", MessageBoxButtons.OK);
             conn.Close();
             cmd.Dispose();
+        }
+
+        private void AddNes_Load(object sender, EventArgs e)
+        {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "dataSet1.worksheet". При необходимости она может быть перемещена или удалена.
+            this.worksheetTableAdapter.Fill(this.dataSet1.worksheet);
+
         }
     }
 }

@@ -24,3 +24,4 @@ C:\Users\nGadget\Documents\GitHub\dip\AISNesover\AISNesover\obj\Debug\AISNesover
 C:\Users\nGadget\Documents\GitHub\dip\AISNesover\AISNesover\obj\Debug\AISNesover.Form1.resources
 C:\Users\nGadget\Documents\GitHub\dip\AISNesover\AISNesover\obj\Debug\AISNesover.Properties.Resources.resources
 C:\Users\nGadget\Documents\GitHub\dip\AISNesover\AISNesover\obj\Debug\AISNesover.csproj.GenerateResource.Cache
+C:\Users\nGadget\Documents\GitHub\dip\AISNesover\AISNesover\obj\Debug\AISNesover.Auth.resources
