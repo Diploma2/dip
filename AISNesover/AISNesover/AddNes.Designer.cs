@@ -131,6 +131,8 @@
             this.textBox25 = new System.Windows.Forms.TextBox();
             this.label39 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.textBox31 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.worksheetBindingSource)).BeginInit();
             this.panel1.SuspendLayout();
@@ -267,6 +269,8 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Control;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.textBox31);
+            this.panel1.Controls.Add(this.label47);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.textBox6);
             this.panel1.Controls.Add(this.label8);
@@ -400,7 +404,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Control;
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.label26);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.label11);
@@ -1146,6 +1150,24 @@
             this.label40.TabIndex = 1;
             this.label40.Text = "Тип деяния:";
             // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label47.Location = new System.Drawing.Point(27, 281);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(151, 24);
+            this.label47.TabIndex = 20;
+            this.label47.Text = "Сост.здоровья:";
+            // 
+            // textBox31
+            // 
+            this.textBox31.Location = new System.Drawing.Point(184, 281);
+            this.textBox31.Multiline = true;
+            this.textBox31.Name = "textBox31";
+            this.textBox31.Size = new System.Drawing.Size(305, 24);
+            this.textBox31.TabIndex = 21;
+            // 
             // AddNes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1290,5 +1312,7 @@
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.TextBox textBox27;
         private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.TextBox textBox31;
+        private System.Windows.Forms.Label label47;
     }
 }
