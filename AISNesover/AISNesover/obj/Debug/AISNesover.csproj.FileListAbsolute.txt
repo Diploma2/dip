@@ -28,3 +28,13 @@ C:\Users\nGadget\Documents\GitHub\dip\AISNesover\AISNesover\obj\Debug\AISNesover
 c:\Users\Admin\Documents\GitHub\dip\AISNesover\AISNesover\bin\Debug\AISNesover.exe.config
 c:\Users\Admin\Documents\GitHub\dip\AISNesover\AISNesover\obj\Debug\AISNesover.exe
 c:\Users\Admin\Documents\GitHub\dip\AISNesover\AISNesover\obj\Debug\AISNesover.pdb
+c:\Users\Admin\Documents\GitHub\dip\AISNesover\AISNesover\bin\Debug\Database1.mdf
+c:\Users\Admin\Documents\GitHub\dip\AISNesover\AISNesover\bin\Debug\Database1_log.ldf
+c:\Users\Admin\Documents\GitHub\dip\AISNesover\AISNesover\bin\Debug\AISNesover.exe
+c:\Users\Admin\Documents\GitHub\dip\AISNesover\AISNesover\bin\Debug\AISNesover.pdb
+c:\Users\Admin\Documents\GitHub\dip\AISNesover\AISNesover\obj\Debug\AISNesover.csprojResolveAssemblyReference.cache
+c:\Users\Admin\Documents\GitHub\dip\AISNesover\AISNesover\obj\Debug\AISNesover.AddNes.resources
+c:\Users\Admin\Documents\GitHub\dip\AISNesover\AISNesover\obj\Debug\AISNesover.Auth.resources
+c:\Users\Admin\Documents\GitHub\dip\AISNesover\AISNesover\obj\Debug\AISNesover.Form1.resources
+c:\Users\Admin\Documents\GitHub\dip\AISNesover\AISNesover\obj\Debug\AISNesover.Properties.Resources.resources
+c:\Users\Admin\Documents\GitHub\dip\AISNesover\AISNesover\obj\Debug\AISNesover.csproj.GenerateResource.Cache

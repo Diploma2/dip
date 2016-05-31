@@ -932,7 +932,6 @@
             // comboBox2
             // 
             this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.Enabled = false;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
             "Состоит на учете",
@@ -1031,7 +1030,7 @@
             this.panel10.Controls.Add(this.textBox25);
             this.panel10.Controls.Add(this.label39);
             this.panel10.Controls.Add(this.label40);
-            this.panel10.Location = new System.Drawing.Point(334, 383);
+            this.panel10.Location = new System.Drawing.Point(316, 2);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(614, 310);
             this.panel10.TabIndex = 23;
