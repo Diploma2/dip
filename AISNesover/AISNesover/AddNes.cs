@@ -20,6 +20,7 @@ namespace AISNesover
         {
             InitializeComponent();
             comboBox1.SelectedIndex = 0;
+            comboBox2.SelectedIndex = 0;
             panel2.Visible = false;
             panel3.Visible = false;
             panel8.Visible = false;
@@ -40,21 +41,26 @@ namespace AISNesover
             {
                 AddNew(textBox1.Text, textBox2.Text, textBox3.Text, comboBox1.Text, dateTimePicker1.Value.ToString("yyyy-MM-dd"),
                     textBox4.Text, textBox5.Text, textBox6.Text, textBox31.Text, textBox9.Text, textBox10.Text,textBox8.Text,
-                    textBox14.Text,textBox15.Text,textBox13.Text,textBox17.Text,textBox16.Text,textBox18.Text);
+                    textBox14.Text,textBox15.Text,textBox13.Text,textBox17.Text,textBox16.Text,textBox18.Text,textBox7.Text,
+                    textBox11.Text,textBox12.Text,textBox19.Text);
             }
         }
         public void AddNew(string surname, string name, string patronymic, string sex, string date,
             string edu, string workPlace, string depend, string health, string birthPlace, string location, string reg,
-            string surnameF, string nameF, string patrF, string surnameM, string nameM, string patrM)
+            string surnameF, string nameF, string patrF, string surnameM, string nameM, string patrM, string livCond,
+            string finStatus, string addrFamily, string signFamily)
         {
             SqlConnection conn = new SqlConnection(connectionString);
             conn.Open(); //Устанавливаем соединение с базой данных.
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = conn;
-            cmd.CommandText = "INSERT INTO [dbo].[worksheet] (Surname, Name, Patronymic, Sex, Birthday,Education,WorkPlace,Dependency,Health,PlaceBirth,Location,Registration,SurnameFather,NameFather,PatronymicFather,SurnameMother,NameMother,PatronymicMother) VALUES(N'"
+            cmd.CommandText = "INSERT INTO [dbo].[worksheet] (Surname, Name, Patronymic, Sex, Birthday,Education,WorkPlace," + 
+                "Dependency,Health,PlaceBirth,Location,Registration,SurnameFather,NameFather,PatronymicFather,SurnameMother," +
+                "NameMother,PatronymicMother,LivingConditions,FinStatus, FamilyAddress, SignsFamily ) VALUES(N'"
                 + surname + "',N'" + name + "',N'" + patronymic + "',N'" + sex + "',N'" + date + "',N'" + edu + "',N'"
                 + workPlace + "',N'" + depend + "',N'" + health + "',N'" + birthPlace + "',N'" + location + "',N'" + reg + "',N'"
-                + surnameF + "',N'" + nameF + "',N'" + patrF + "',N'" + surnameM + "',N'" + nameM + "',N'" + patrM + "')";
+                + surnameF + "',N'" + nameF + "',N'" + patrF + "',N'" + surnameM + "',N'" + nameM + "',N'" + patrM + "',N'"
+                + livCond + "',N'" + finStatus + "',N'" + addrFamily + "',N'" + signFamily + "')";
             cmd.ExecuteNonQuery();
             MessageBox.Show("Добавление прошло успешно!", "Добавление прошло успешно", MessageBoxButtons.OK);
             conn.Close();

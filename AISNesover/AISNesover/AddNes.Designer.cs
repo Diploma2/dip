@@ -44,6 +44,8 @@
             this.worksheetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.worksheetTableAdapter = new AISNesover.DataSet1TableAdapters.worksheetTableAdapter();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.textBox31 = new System.Windows.Forms.TextBox();
+            this.label47 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -131,8 +133,6 @@
             this.textBox25 = new System.Windows.Forms.TextBox();
             this.label39 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
-            this.textBox31 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.worksheetBindingSource)).BeginInit();
             this.panel1.SuspendLayout();
@@ -223,6 +223,7 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
@@ -292,6 +293,24 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(614, 310);
             this.panel1.TabIndex = 13;
+            // 
+            // textBox31
+            // 
+            this.textBox31.Location = new System.Drawing.Point(184, 281);
+            this.textBox31.Multiline = true;
+            this.textBox31.Name = "textBox31";
+            this.textBox31.Size = new System.Drawing.Size(305, 24);
+            this.textBox31.TabIndex = 21;
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label47.Location = new System.Drawing.Point(27, 281);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(151, 24);
+            this.label47.TabIndex = 20;
+            this.label47.Text = "Сост.здоровья:";
             // 
             // label9
             // 
@@ -912,6 +931,8 @@
             // 
             // comboBox2
             // 
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox2.Enabled = false;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
             "Состоит на учете",
@@ -1010,7 +1031,7 @@
             this.panel10.Controls.Add(this.textBox25);
             this.panel10.Controls.Add(this.label39);
             this.panel10.Controls.Add(this.label40);
-            this.panel10.Location = new System.Drawing.Point(316, 2);
+            this.panel10.Location = new System.Drawing.Point(334, 383);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(614, 310);
             this.panel10.TabIndex = 23;
@@ -1150,29 +1171,11 @@
             this.label40.TabIndex = 1;
             this.label40.Text = "Тип деяния:";
             // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label47.Location = new System.Drawing.Point(27, 281);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(151, 24);
-            this.label47.TabIndex = 20;
-            this.label47.Text = "Сост.здоровья:";
-            // 
-            // textBox31
-            // 
-            this.textBox31.Location = new System.Drawing.Point(184, 281);
-            this.textBox31.Multiline = true;
-            this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(305, 24);
-            this.textBox31.TabIndex = 21;
-            // 
             // AddNes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(935, 371);
+            this.ClientSize = new System.Drawing.Size(935, 647);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel7);
