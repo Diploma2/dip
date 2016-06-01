@@ -15,7 +15,7 @@ namespace AISNesover
     {
         private sql _sqlWork = new sql();
         // в строке подключения вместо Admin нужно nGadget
-        public static String connectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Admin\Documents\GitHub\dip\AISNesover\AISNesover\Database1.mdf;Integrated Security=True"; 
+        public static String connectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\nGadget\Documents\GitHub\dip\AISNesover\AISNesover\Database1.mdf;Integrated Security=True"; 
 
         public AddNes()
         {
@@ -48,6 +48,11 @@ namespace AISNesover
                     dateTimePicker4.Value.ToString("yyyy-MM-dd"), textBox25.Text, dateTimePicker5.Value.ToString("yyyy-MM-dd"), textBox26.Text,
                     textBox27.Text, textBox28.Text, textBox29.Text, textBox30.Text);
             }
+            Form1 f1 = new Form1();
+            f1.Refresher();
+           // f1.Enabled = true;
+            this.Close();
+            
         }
         public void AddNew(string surname, string name, string patronymic, string sex, string date,
             string edu, string workPlace, string depend, string health, string birthPlace, string location, string reg,
@@ -82,7 +87,7 @@ namespace AISNesover
         private void AddNes_Load(object sender, EventArgs e)
         {
             // TODO: данная строка кода позволяет загрузить данные в таблицу "dataSet1.worksheet". При необходимости она может быть перемещена или удалена.
-            this.worksheetTableAdapter.Fill(this.dataSet1.worksheet);
+     //       this.worksheetTableAdapter.Fill(this.dataSet1.worksheet);
 
         }
 
