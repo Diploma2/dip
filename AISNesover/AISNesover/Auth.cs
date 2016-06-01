@@ -7,7 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
+using System.Security.Cryptography;
+using System.IO;
 
 namespace AISNesover
 {
@@ -16,25 +17,51 @@ namespace AISNesover
         public Auth()
         {
             InitializeComponent();
+            textBox2.UseSystemPasswordChar = true;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\nGadget\Documents\GitHub\dip\AISNesover\AISNesover\auth.mdf;Integrated Security=True;Connect Timeout=30;");
-            SqlDataAdapter sda = new SqlDataAdapter("SELECT Count(*) From LOGIN WHERE USERNAME='" + textBox1.Text + "' and PASSWORD = '" + textBox2.Text + "' ", con);
-            DataTable dt = new DataTable();
-            sda.Fill(dt);
-            if (dt.Rows[0][0].ToString() == "1")
+            string path = @"C:\Users\nGadget\Documents\GitHub\dip\AISNesover\AISNesover\auth.txt";
+            string[] Line;
+            Line = File.ReadAllLines(path);
+            if (GetMD5(textBox1.Text) == Line[0])
             {
-                this.Hide();
-                Form1 f1 = new Form1();
-                f1.Show();
+               if (GetMD5(textBox2.Text) == Line[1])
+               {
+                   this.Hide();
+                   Form1 f1 = new Form1();
+                   f1.Show();
+               }
+               else
+               {
+                   MessageBox.Show("Неверный пароль");
+               }
             }
             else
             {
-                MessageBox.Show("Пожалуйста, проверьте введенные данные");
+                MessageBox.Show("Неверный логин");
             }
-           
+        }
+
+        public string GetMD5(string text)
+        {
+            MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider();
+            md5.ComputeHash(ASCIIEncoding.ASCII.GetBytes(text));
+            byte[] result = md5.Hash;
+            StringBuilder str = new StringBuilder();
+            for (int i = 1; i < result.Length; i++)
+            {
+                str.Append(result[i].ToString("x2"));
+            }
+            return str.ToString();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            Form2 f2 = new Form2();
+            f2.Show(this);
         }
     }
 }

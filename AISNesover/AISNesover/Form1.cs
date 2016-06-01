@@ -21,6 +21,12 @@ namespace AISNesover
         public Form1()
         {
             InitializeComponent();
+            FormClosed += new FormClosedEventHandler(Form1_FormClosed);
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
 
         private void Form1_Load(object sender, EventArgs e)

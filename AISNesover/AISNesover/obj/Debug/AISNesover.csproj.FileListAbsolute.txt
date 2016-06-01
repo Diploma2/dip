@@ -38,3 +38,4 @@ c:\Users\Admin\Documents\GitHub\dip\AISNesover\AISNesover\obj\Debug\AISNesover.A
 c:\Users\Admin\Documents\GitHub\dip\AISNesover\AISNesover\obj\Debug\AISNesover.Form1.resources
 c:\Users\Admin\Documents\GitHub\dip\AISNesover\AISNesover\obj\Debug\AISNesover.Properties.Resources.resources
 c:\Users\Admin\Documents\GitHub\dip\AISNesover\AISNesover\obj\Debug\AISNesover.csproj.GenerateResource.Cache
+C:\Users\nGadget\Documents\GitHub\dip\AISNesover\AISNesover\obj\Debug\AISNesover.Form2.resources
