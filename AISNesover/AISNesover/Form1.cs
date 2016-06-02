@@ -17,7 +17,6 @@ namespace AISNesover
         // в строке подключения вместо Admin нужно nGadget
         public static String connectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\nGadget\Documents\GitHub\dip\AISNesover\AISNesover\Database1.mdf;Integrated Security=True"; 
 
-       
         public Form1()
         {
             InitializeComponent();
@@ -31,21 +30,15 @@ namespace AISNesover
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dataSet1.worksheet' table. You can move, or remove it, as needed.
             _sqlWork.FillDataGridViewByQuery(dataGridView1, "SELECT IdMinor,Surname, Name, Patronymic, Sex, Birthday FROM worksheet");
             this.dataGridView1.Columns[0].Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.Hide();
             AddNes addNes = new AddNes();
-            addNes.Show();
-         //   this.Enabled = false;
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Refresher();
+            addNes.Show(this);
         }
 
         public void Refresher()
