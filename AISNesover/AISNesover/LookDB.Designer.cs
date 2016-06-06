@@ -1,6 +1,6 @@
 ﻿namespace AISNesover
 {
-    partial class AddNes
+    partial class LookDB
     {
         /// <summary>
         /// Required designer variable.
@@ -28,21 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dataSet1 = new AISNesover.DataSet1();
-            this.worksheetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.worksheetTableAdapter = new AISNesover.DataSet1TableAdapters.worksheetTableAdapter();
             this.panel1 = new System.Windows.Forms.Panel();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label47 = new System.Windows.Forms.Label();
@@ -51,10 +36,16 @@
             this.label8 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label26 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -91,8 +82,6 @@
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
-            this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label35 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
@@ -131,138 +120,24 @@
             this.textBox25 = new System.Windows.Forms.TextBox();
             this.label39 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.worksheetBindingSource)).BeginInit();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel10.SuspendLayout();
+            this.panel7.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(82, 41);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Фамилия:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(127, 71);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 24);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Имя:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(75, 101);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(103, 24);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Отчество:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(129, 131);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(49, 24);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Пол:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(184, 41);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(305, 24);
-            this.textBox1.TabIndex = 4;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(23, 161);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(155, 24);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Дата рождения:";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(184, 71);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(305, 24);
-            this.textBox2.TabIndex = 6;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(184, 101);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(305, 24);
-            this.textBox3.TabIndex = 7;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "М",
-            "Ж"});
-            this.comboBox1.Location = new System.Drawing.Point(184, 131);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(69, 24);
-            this.comboBox1.TabIndex = 10;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(316, 318);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(124, 49);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Добавить";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(184, 161);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(305, 20);
-            this.dateTimePicker1.TabIndex = 12;
-            // 
-            // dataSet1
-            // 
-            this.dataSet1.DataSetName = "DataSet1";
-            this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // worksheetBindingSource
-            // 
-            this.worksheetBindingSource.DataMember = "worksheet";
-            this.worksheetBindingSource.DataSource = this.dataSet1;
-            // 
-            // worksheetTableAdapter
-            // 
-            this.worksheetTableAdapter.ClearBeforeFill = true;
             // 
             // panel1
             // 
@@ -288,7 +163,7 @@
             this.panel1.Location = new System.Drawing.Point(316, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(614, 310);
-            this.panel1.TabIndex = 13;
+            this.panel1.TabIndex = 29;
             // 
             // comboBox3
             // 
@@ -361,49 +236,100 @@
             this.label7.TabIndex = 14;
             this.label7.Text = "Образование:";
             // 
-            // button2
+            // label1
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(12, 83);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(282, 63);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Адреса";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(82, 41);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(96, 24);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Фамилия:";
             // 
-            // button3
+            // dateTimePicker1
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.Location = new System.Drawing.Point(12, 152);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(282, 63);
-            this.button3.TabIndex = 15;
-            this.button3.Text = "Семья";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.dateTimePicker1.Location = new System.Drawing.Point(184, 161);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(305, 20);
+            this.dateTimePicker1.TabIndex = 12;
             // 
-            // button4
+            // label2
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button4.Location = new System.Drawing.Point(12, 221);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(282, 63);
-            this.button4.TabIndex = 16;
-            this.button4.Text = "Учет";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(127, 71);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(51, 24);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Имя:";
             // 
-            // button5
+            // label3
             // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button5.Location = new System.Drawing.Point(12, 290);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(282, 63);
-            this.button5.TabIndex = 17;
-            this.button5.Text = "Совершенные деяния";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Location = new System.Drawing.Point(75, 101);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(103, 24);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Отчество:";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "М",
+            "Ж"});
+            this.comboBox1.Location = new System.Drawing.Point(184, 131);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(69, 24);
+            this.comboBox1.TabIndex = 10;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.Location = new System.Drawing.Point(129, 131);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(49, 24);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Пол:";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(184, 101);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(305, 24);
+            this.textBox3.TabIndex = 7;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(184, 41);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(305, 24);
+            this.textBox1.TabIndex = 4;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(184, 71);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(305, 24);
+            this.textBox2.TabIndex = 6;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5.Location = new System.Drawing.Point(23, 161);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(155, 24);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Дата рождения:";
             // 
             // panel2
             // 
@@ -419,7 +345,7 @@
             this.panel2.Location = new System.Drawing.Point(316, 2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(614, 310);
-            this.panel2.TabIndex = 18;
+            this.panel2.TabIndex = 28;
             // 
             // label26
             // 
@@ -496,7 +422,7 @@
             this.panel3.Location = new System.Drawing.Point(316, 2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(614, 310);
-            this.panel3.TabIndex = 19;
+            this.panel3.TabIndex = 27;
             // 
             // label27
             // 
@@ -770,30 +696,6 @@
             this.label16.TabIndex = 1;
             this.label16.Text = "Имя:";
             // 
-            // button6
-            // 
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button6.Location = new System.Drawing.Point(12, 14);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(282, 63);
-            this.button6.TabIndex = 20;
-            this.button6.Text = "Анкета";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panel7.Controls.Add(this.button6);
-            this.panel7.Controls.Add(this.button2);
-            this.panel7.Controls.Add(this.button3);
-            this.panel7.Controls.Add(this.button5);
-            this.panel7.Controls.Add(this.button4);
-            this.panel7.Location = new System.Drawing.Point(2, 2);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(305, 367);
-            this.panel7.TabIndex = 21;
-            // 
             // panel8
             // 
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -815,7 +717,7 @@
             this.panel8.Location = new System.Drawing.Point(316, 2);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(614, 310);
-            this.panel8.TabIndex = 22;
+            this.panel8.TabIndex = 30;
             // 
             // label35
             // 
@@ -1030,7 +932,7 @@
             this.panel10.Location = new System.Drawing.Point(316, 2);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(614, 310);
-            this.panel10.TabIndex = 23;
+            this.panel10.TabIndex = 31;
             // 
             // textBox30
             // 
@@ -1167,23 +1069,99 @@
             this.label40.TabIndex = 1;
             this.label40.Text = "Тип деяния:";
             // 
-            // AddNes
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel7.Controls.Add(this.button6);
+            this.panel7.Controls.Add(this.button2);
+            this.panel7.Controls.Add(this.button3);
+            this.panel7.Controls.Add(this.button5);
+            this.panel7.Controls.Add(this.button4);
+            this.panel7.Location = new System.Drawing.Point(2, 2);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(305, 367);
+            this.panel7.TabIndex = 34;
+            // 
+            // button6
+            // 
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button6.Location = new System.Drawing.Point(12, 14);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(282, 63);
+            this.button6.TabIndex = 20;
+            this.button6.Text = "Анкета";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button2.Location = new System.Drawing.Point(12, 83);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(282, 63);
+            this.button2.TabIndex = 14;
+            this.button2.Text = "Адреса";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button3.Location = new System.Drawing.Point(12, 152);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(282, 63);
+            this.button3.TabIndex = 15;
+            this.button3.Text = "Семья";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button5
+            // 
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button5.Location = new System.Drawing.Point(12, 290);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(282, 63);
+            this.button5.TabIndex = 17;
+            this.button5.Text = "Совершенные деяния";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button4.Location = new System.Drawing.Point(12, 221);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(282, 63);
+            this.button4.TabIndex = 16;
+            this.button4.Text = "Учет";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(316, 318);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(124, 49);
+            this.button1.TabIndex = 35;
+            this.button1.Text = "Распечатать отчет";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // LookDB
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(933, 742);
+            this.ClientSize = new System.Drawing.Size(933, 373);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel8);
-            this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button1);
-            this.Name = "AddNes";
-            this.Text = "Добавление несовершеннолетнего";
-            this.Load += new System.EventHandler(this.AddNes_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.worksheetBindingSource)).EndInit();
+            this.Name = "LookDB";
+            this.Text = "LookDB";
+            this.Load += new System.EventHandler(this.LookDB_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -1196,63 +1174,57 @@
             this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            this.panel7.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
+            this.panel7.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private DataSet1 dataSet1;
-        private System.Windows.Forms.BindingSource worksheetBindingSource;
-        private DataSet1TableAdapters.worksheetTableAdapter worksheetTableAdapter;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
@@ -1263,13 +1235,24 @@
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.DateTimePicker dateTimePicker4;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.TextBox textBox24;
+        private System.Windows.Forms.TextBox textBox20;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.DateTimePicker dateTimePicker3;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.TextBox textBox23;
@@ -1280,25 +1263,7 @@
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.TextBox textBox24;
-        private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker4;
-        private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.TextBox textBox26;
-        private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.DateTimePicker dateTimePicker5;
-        private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.TextBox textBox25;
-        private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.Label label40;
         private System.Windows.Forms.TextBox textBox30;
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.TextBox textBox29;
@@ -1307,9 +1272,19 @@
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.TextBox textBox27;
         private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.TextBox textBox26;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.DateTimePicker dateTimePicker5;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.TextBox textBox25;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button1;
     }
 }

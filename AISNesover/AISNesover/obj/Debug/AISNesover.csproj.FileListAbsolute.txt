@@ -39,3 +39,5 @@ c:\Users\Admin\Documents\GitHub\dip\AISNesover\AISNesover\obj\Debug\AISNesover.F
 c:\Users\Admin\Documents\GitHub\dip\AISNesover\AISNesover\obj\Debug\AISNesover.Properties.Resources.resources
 c:\Users\Admin\Documents\GitHub\dip\AISNesover\AISNesover\obj\Debug\AISNesover.csproj.GenerateResource.Cache
 C:\Users\nGadget\Documents\GitHub\dip\AISNesover\AISNesover\obj\Debug\AISNesover.Form2.resources
+C:\Users\nGadget\Documents\GitHub\dip\AISNesover\AISNesover\obj\Debug\AISNesover.EditDB.resources
+C:\Users\nGadget\Documents\GitHub\dip\AISNesover\AISNesover\obj\Debug\AISNesover.LookDB.resources

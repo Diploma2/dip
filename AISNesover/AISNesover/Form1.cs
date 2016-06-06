@@ -14,6 +14,7 @@ namespace AISNesover
     public partial class Form1 : Form
     {
         private sql _sqlWork = new sql();
+        public static int qq;
         // в строке подключения вместо Admin нужно nGadget
         public static String connectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\nGadget\Documents\GitHub\dip\AISNesover\AISNesover\Database1.mdf;Integrated Security=True"; 
 
@@ -30,8 +31,43 @@ namespace AISNesover
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            _sqlWork.FillDataGridViewByQuery(dataGridView1, "SELECT IdMinor,Surname, Name, Patronymic, Sex, Birthday FROM worksheet");
+            
+            _sqlWork.FillDataGridViewByQuery(dataGridView1, "SELECT IdMinor,Surname, Name, Patronymic, Sex, Birthday,PlaceBirth,Location,Registration,Education,SurnameMother,NameMother,PatronymicMother,SurnameFather,NameFather,PatronymicFather,Status,Source,Article,Cause,DateDeregistration,BasisOfPuttingOnRecord,Number,DateDecision,Health,Dependency,DateOffense,ParticipantsOffense,ArticleOffense,TypePunishment,LivingConditions,FinStatus,FamilyAddress,SignsFamily,CrimeScene,DateRegistration,AddressOffense,TypeCrime FROM worksheet");
             this.dataGridView1.Columns[0].Visible = false;
+            this.dataGridView1.Columns[6].Visible = false;
+            this.dataGridView1.Columns[7].Visible = false;
+            this.dataGridView1.Columns[8].Visible = false;
+            this.dataGridView1.Columns[9].Visible = false;
+            this.dataGridView1.Columns[10].Visible = false;
+            this.dataGridView1.Columns[11].Visible = false;
+            this.dataGridView1.Columns[12].Visible = false;
+            this.dataGridView1.Columns[13].Visible = false;
+            this.dataGridView1.Columns[14].Visible = false;
+            this.dataGridView1.Columns[15].Visible = false;
+            this.dataGridView1.Columns[16].Visible = false;
+            this.dataGridView1.Columns[17].Visible = false;
+            this.dataGridView1.Columns[18].Visible = false;
+            this.dataGridView1.Columns[19].Visible = false;
+            this.dataGridView1.Columns[20].Visible = false;
+            this.dataGridView1.Columns[21].Visible = false;
+            this.dataGridView1.Columns[22].Visible = false;
+            this.dataGridView1.Columns[23].Visible = false;
+            this.dataGridView1.Columns[24].Visible = false;
+            this.dataGridView1.Columns[25].Visible = false;
+            this.dataGridView1.Columns[26].Visible = false;
+            this.dataGridView1.Columns[27].Visible = false;
+            this.dataGridView1.Columns[28].Visible = false;
+            this.dataGridView1.Columns[29].Visible = false;
+            this.dataGridView1.Columns[30].Visible = false;
+            this.dataGridView1.Columns[31].Visible = false;
+            this.dataGridView1.Columns[32].Visible = false;
+            this.dataGridView1.Columns[33].Visible = false;
+            this.dataGridView1.Columns[34].Visible = false;
+            this.dataGridView1.Columns[35].Visible = false;
+            this.dataGridView1.Columns[36].Visible = false;
+            this.dataGridView1.Columns[37].Visible = false;
+            this.dataGridView1.Columns[38].Visible = false;
+            this.dataGridView1.Columns[39].Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -43,8 +79,7 @@ namespace AISNesover
 
         public void Refresher()
         {
-            _sqlWork.FillDataGridViewByQuery(dataGridView1, "SELECT IdMinor,Surname, Name, Patronymic, Sex, Birthday FROM worksheet");
-
+            _sqlWork.FillDataGridViewByQuery(dataGridView1, "SELECT IdMinor,Surname, Name, Patronymic, Sex, Birthday,PlaceBirth,Location,Registration,Education,SurnameMother,NameMother,PatronymicMother,SurnameFather,NameFather,PatronymicFather,Status,Source,Article,Cause,DateDeregistration,BasisOfPuttingOnRecord,Number,DateDecision,Health,Dependency,DateOffense,ParticipantsOffense,ArticleOffense,TypePunishment,LivingConditions,FinStatus,FamilyAddress,SignsFamily,CrimeScene,DateRegistration,AddressOffense,TypeCrime FROM worksheet");
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -58,7 +93,6 @@ namespace AISNesover
             int row = dataGridView1.CurrentRow.Index;
             DataGridViewRow rows = dataGridView1.CurrentRow;
             string x1 = dataGridView1[0, row].Value.ToString();
-
             SqlConnection conn = new SqlConnection(connectionString);
             conn.Open(); //Устанавливаем соединение с базой данных.
             SqlCommand cmd = new SqlCommand();
@@ -71,28 +105,16 @@ namespace AISNesover
 
         private void button4_Click(object sender, EventArgs e)
         {
-      /*      int row = dataGridView1.CurrentRow.Index;
-            qq = Convert.ToInt32(dataGridView1[0, row].Value.ToString());
-            string x1 = dataGridView1[1, row].Value.ToString();
-            string x2 = dataGridView1[2, row].Value.ToString();
-            textBox1.Text = x1;
-            textBox2.Text = x2;
-            button1.Visible = false;
-            button4.Visible = true;
-            label5.Visible = true;
-           UpdateTab();*/
+            this.Hide();
+            EditDB edNes = new EditDB();
+            edNes.Show(this);
         }
 
-   /*     public void UpdateTab(string country, string city)
+        private void button2_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection(connectionString);
-            conn.Open(); //Устанавливаем соединение с базой данных.
-            SqlCommand cmd = new SqlCommand();
-            cmd.Connection = conn;
-            cmd.CommandText = "UPDATE [dbo].[Cities] SET Country=N'" + country + "',City=N'" + city + "'  WHERE IdCity='" + qq + "'";
-            cmd.ExecuteNonQuery();
-            MessageBox.Show("Запись обновлена!", "Редактирование", MessageBoxButtons.OK);
-            conn.Close();
-        }*/
+            this.Hide();
+            LookDB lookNes = new LookDB();
+            lookNes.Show(this);
+        }
     }
 }
