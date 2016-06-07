@@ -16,7 +16,7 @@ namespace AISNesover
         private sql _sqlWork = new sql();
         public static int qq;
         // в строке подключения вместо Admin нужно nGadget
-        public static String connectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Admin\Documents\GitHub\dip\AISNesover\AISNesover\Database1.mdf;Integrated Security=True"; 
+        public static String connectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\nGadget\Documents\GitHub\dip\AISNesover\AISNesover\Database1.mdf;Integrated Security=True"; 
 
         public AddNes()
         {
@@ -139,6 +139,15 @@ namespace AISNesover
             panel3.Visible = false;
             panel8.Visible = false;
             panel10.Visible = true;
+        }
+
+        private void textBox24_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if (!Char.IsDigit(ch))
+            {
+                e.Handled = true;
+            }
         }
     }
 }
