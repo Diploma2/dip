@@ -21,6 +21,7 @@ namespace AISNesover
         public Form1()
         {
             InitializeComponent();
+            comboBox1.SelectedIndex = 0;
             FormClosed += new FormClosedEventHandler(Form1_FormClosed);
         }
 
@@ -33,6 +34,11 @@ namespace AISNesover
         {
             
             _sqlWork.FillDataGridViewByQuery(dataGridView1, "SELECT IdMinor,Surname, Name, Patronymic, Sex, Birthday,PlaceBirth,Location,Registration,Education,SurnameMother,NameMother,PatronymicMother,SurnameFather,NameFather,PatronymicFather,Status,Source,Article,Cause,DateDeregistration,BasisOfPuttingOnRecord,Number,DateDecision,Health,Dependency,DateOffense,ParticipantsOffense,ArticleOffense,TypePunishment,LivingConditions,FinStatus,FamilyAddress,SignsFamily,CrimeScene,DateRegistration,AddressOffense,TypeCrime FROM worksheet");
+            dataGridView1.Columns[1].HeaderText="Фамилия";
+            dataGridView1.Columns[2].HeaderText = "Имя";
+            dataGridView1.Columns[3].HeaderText = "Отчество";
+            dataGridView1.Columns[4].HeaderText = "Пол";
+            dataGridView1.Columns[5].HeaderText = "Дата рождения";
             this.dataGridView1.Columns[0].Visible = false;
             this.dataGridView1.Columns[6].Visible = false;
             this.dataGridView1.Columns[7].Visible = false;
@@ -90,31 +96,69 @@ namespace AISNesover
 
         public void DeleteRow()
         {
-            int row = dataGridView1.CurrentRow.Index;
-            DataGridViewRow rows = dataGridView1.CurrentRow;
-            string x1 = dataGridView1[0, row].Value.ToString();
-            SqlConnection conn = new SqlConnection(connectionString);
-            conn.Open(); //Устанавливаем соединение с базой данных.
-            SqlCommand cmd = new SqlCommand();
-            cmd.Connection = conn;
-            cmd.CommandText = "DELETE FROM [dbo].[worksheet] WHERE IdMinor='" + x1 + "'";
-            cmd.ExecuteNonQuery();
-            MessageBox.Show("Запись удалена!", "Удаление", MessageBoxButtons.OK);
-            conn.Close();
+            
+            if (dataGridView1.CurrentRow == null)
+            {
+                MessageBox.Show("Выберите строку для удаления");
+            }
+            else
+            {
+                int row = dataGridView1.CurrentRow.Index;
+                DataGridViewRow rows = dataGridView1.CurrentRow;
+                string x1 = dataGridView1[0, row].Value.ToString();
+                SqlConnection conn = new SqlConnection(connectionString);
+                conn.Open(); //Устанавливаем соединение с базой данных.
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = "DELETE FROM [dbo].[worksheet] WHERE IdMinor='" + x1 + "'";
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Запись удалена!", "Удаление", MessageBoxButtons.OK);
+                conn.Close();
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            EditDB edNes = new EditDB();
-            edNes.Show(this);
+            if (dataGridView1.CurrentRow == null)
+            {
+                MessageBox.Show("Выберите строку для редактирования");
+            }
+            else
+            {
+                this.Hide();
+                EditDB edNes = new EditDB();
+                edNes.Show(this);
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            LookDB lookNes = new LookDB();
-            lookNes.Show(this);
+            if (dataGridView1.CurrentRow == null)
+            {
+                MessageBox.Show("Выберите строку для просмотра");
+            }
+            else
+            {
+                this.Hide();
+                LookDB lookNes = new LookDB();
+                lookNes.Show(this);
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (comboBox1.Text == "Искать по фамилии")
+            {
+                _sqlWork.FillDataGridViewByQuery(dataGridView1, "SELECT * FROM worksheet WHERE Surname LIKE '" + textBox1.Text + "%'");
+            }
+            if (comboBox1.Text == "Искать по имени")
+            {
+                _sqlWork.FillDataGridViewByQuery(dataGridView1, "SELECT * FROM worksheet WHERE Name LIKE '" + textBox1.Text + "%'");
+            }
+            if (comboBox1.Text == "Искать по отчеству")
+            {
+                _sqlWork.FillDataGridViewByQuery(dataGridView1, "SELECT * FROM worksheet WHERE Patronymic LIKE '" + textBox1.Text + "%'");
+            }
         }
     }
 }
