@@ -72,8 +72,6 @@ namespace AISNesover
             this.dataGridView1.Columns[35].Visible = false;
             this.dataGridView1.Columns[36].Visible = false;
             this.dataGridView1.Columns[37].Visible = false;
-            this.dataGridView1.Columns[38].Visible = false;
-            this.dataGridView1.Columns[39].Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -149,15 +147,15 @@ namespace AISNesover
         {
             if (comboBox1.Text == "Искать по фамилии")
             {
-                _sqlWork.FillDataGridViewByQuery(dataGridView1, "SELECT * FROM worksheet WHERE Surname LIKE '" + textBox1.Text + "%'");
+                _sqlWork.FillDataGridViewByQuery(dataGridView1, "SELECT * FROM worksheet WHERE Surname LIKE N'" + textBox1.Text + "%'");
             }
             if (comboBox1.Text == "Искать по имени")
             {
-                _sqlWork.FillDataGridViewByQuery(dataGridView1, "SELECT * FROM worksheet WHERE Name LIKE '" + textBox1.Text + "%'");
+                _sqlWork.FillDataGridViewByQuery(dataGridView1, "SELECT * FROM worksheet WHERE Name LIKE N'" + textBox1.Text + "%'");
             }
             if (comboBox1.Text == "Искать по отчеству")
             {
-                _sqlWork.FillDataGridViewByQuery(dataGridView1, "SELECT * FROM worksheet WHERE Patronymic LIKE '" + textBox1.Text + "%'");
+                _sqlWork.FillDataGridViewByQuery(dataGridView1, "SELECT * FROM worksheet WHERE Patronymic LIKE N'" + textBox1.Text + "%'");
             }
         }
     }

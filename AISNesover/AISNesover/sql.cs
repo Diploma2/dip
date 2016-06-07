@@ -15,7 +15,7 @@ namespace AISNesover
     class sql
     {
            // в строке подключения вместо Admin нужно nGadget
-        public static String _connectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\nGadget\Documents\GitHub\dip\AISNesover\AISNesover\Database1.mdf;Integrated Security=True"; 
+        public static String _connectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Admin\Documents\GitHub\dip\AISNesover\AISNesover\Database1.mdf;Integrated Security=True"; 
         public void FillDataGridViewByQuery(DataGridView dgv, String query) 
         { 
             SqlConnection connection = new SqlConnection(); 

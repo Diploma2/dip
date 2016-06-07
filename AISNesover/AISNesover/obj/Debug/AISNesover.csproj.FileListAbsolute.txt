@@ -41,3 +41,6 @@ c:\Users\Admin\Documents\GitHub\dip\AISNesover\AISNesover\obj\Debug\AISNesover.c
 C:\Users\nGadget\Documents\GitHub\dip\AISNesover\AISNesover\obj\Debug\AISNesover.Form2.resources
 C:\Users\nGadget\Documents\GitHub\dip\AISNesover\AISNesover\obj\Debug\AISNesover.EditDB.resources
 C:\Users\nGadget\Documents\GitHub\dip\AISNesover\AISNesover\obj\Debug\AISNesover.LookDB.resources
+c:\Users\Admin\Documents\GitHub\dip\AISNesover\AISNesover\obj\Debug\AISNesover.EditDB.resources
+c:\Users\Admin\Documents\GitHub\dip\AISNesover\AISNesover\obj\Debug\AISNesover.Form2.resources
+c:\Users\Admin\Documents\GitHub\dip\AISNesover\AISNesover\obj\Debug\AISNesover.LookDB.resources
